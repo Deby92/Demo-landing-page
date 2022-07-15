@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function blog_post() {
   return (
@@ -7,9 +8,9 @@ export default function blog_post() {
         {/* Navigation*/}
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container px-5">
-            <a className="navbar-brand" href="index.html">
+            <Link className="navbar-brand" to="index.html">
               Start Bootstrap
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -27,84 +28,84 @@ export default function blog_post() {
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link" href="index.html">
+                  <Link className="nav-link" to="index.html">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="about.html">
+                  <Link className="nav-link" to="about.html">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="contact.html">
+                  <Link className="nav-link" to="contact.html">
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="pricing.html">
+                  <Link className="nav-link" to="pricing.html">
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="faq.html">
+                  <Link className="nav-link" to="faq.html">
                     FAQ
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
                     id="navbarDropdownBlog"
-                    href="#"
+                    to="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Blog
-                  </a>
+                  </Link>
                   <ul
                     className="dropdown-menu dropdown-menu-end"
                     aria-labelledby="navbarDropdownBlog"
                   >
                     <li>
-                      <a className="dropdown-item" href="blog-home.html">
+                      <Link className="dropdown-item" to="blog-home.html">
                         Blog Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="blog-post.html">
+                      <Link className="dropdown-item" to="blog-post.html">
                         Blog Post
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
                     id="navbarDropdownPortfolio"
-                    href="#"
+                    to="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Portfolio
-                  </a>
+                  </Link>
                   <ul
                     className="dropdown-menu dropdown-menu-end"
                     aria-labelledby="navbarDropdownPortfolio"
                   >
                     <li>
-                      <a
+                      <Link
                         className="dropdown-item"
-                        href="portfolio-overview.html"
+                        to="portfolio-overview.html"
                       >
                         Portfolio Overview
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="portfolio-item.html">
+                      <Link className="dropdown-item" to="portfolio-item.html">
                         Portfolio Item
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -141,18 +142,18 @@ export default function blog_post() {
                       January 1, 2022
                     </div>
                     {/* Post categories*/}
-                    <a
+                    <Link
                       className="badge bg-secondary text-decoration-none link-light"
-                      href="#!"
+                      to="#!"
                     >
                       Web Design
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="badge bg-secondary text-decoration-none link-light"
-                      href="#!"
+                      to="#!"
                     >
                       Freebies
-                    </a>
+                    </Link>
                   </header>
                   {/* Preview image figure*/}
                   <figure className="mb-4">
@@ -297,17 +298,17 @@ export default function blog_post() {
               </div>
             </div>
             <div className="col-auto">
-              <a className="link-light small" href="#!">
+              <Link className="link-light small" to="#!">
                 Privacy
-              </a>
+              </Link>
               <span className="text-white mx-1">·</span>
-              <a className="link-light small" href="#!">
+              <Link className="link-light small" to="#!">
                 Terms
-              </a>
+              </Link>
               <span className="text-white mx-1">·</span>
-              <a className="link-light small" href="#!">
+              <Link className="link-light small" to="#!">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </div>

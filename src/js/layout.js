@@ -23,7 +23,7 @@ const Layout = () => {
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
 					<Switch>
-						<Route exact path="/" component={Index}>
+						<Route exact path="/">
 							<Index />
 						</Route>
 						<Route exact path="/about">

@@ -7,9 +7,9 @@ export default function blog_home() {
         {/* Navigation*/}
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container px-5">
-            <a className="navbar-brand" href="index.html">
+            <Link className="navbar-brand" to="index.html">
               Start Bootstrap
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -27,84 +27,84 @@ export default function blog_home() {
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link" href="index.html">
+                  <Link className="nav-link" to="index.html">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="about.html">
+                  <Link className="nav-link" to="about.html">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="contact.html">
+                  <Link className="nav-link" to="contact.html">
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="pricing.html">
+                  <Link className="nav-link" to="pricing.html">
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="faq.html">
+                  <Link className="nav-link" to="faq.html">
                     FAQ
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
                     id="navbarDropdownBlog"
-                    href="#"
+                    to="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Blog
-                  </a>
+                  </Link>
                   <ul
                     className="dropdown-menu dropdown-menu-end"
                     aria-labelledby="navbarDropdownBlog"
                   >
                     <li>
-                      <a className="dropdown-item" href="blog-home.html">
+                      <Link className="dropdown-item" to="blog-home.html">
                         Blog Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="blog-post.html">
+                      <Link className="dropdown-item" to="blog-post.html">
                         Blog Post
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
                     id="navbarDropdownPortfolio"
-                    href="#"
+                    to="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Portfolio
-                  </a>
+                  </Link>
                   <ul
                     className="dropdown-menu dropdown-menu-end"
                     aria-labelledby="navbarDropdownPortfolio"
                   >
                     <li>
-                      <a
+                      <Link
                         className="dropdown-item"
-                        href="portfolio-overview.html"
+                        to="portfolio-overview.html"
                       >
                         Portfolio Overview
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="portfolio-item.html">
+                      <Link className="dropdown-item" to="portfolio-item.html">
                         Portfolio Item
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -132,13 +132,13 @@ export default function blog_home() {
                         Similique delectus ab doloremque, qui doloribus ea
                         officiis...
                       </p>
-                      <a
+                      <Link
                         className="stretched-link text-decoration-none"
-                        href="#!"
+                        to="#!"
                       >
                         Read more
                         <i className="bi bi-arrow-right" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-lg-6 col-xl-7">
@@ -163,35 +163,35 @@ export default function blog_home() {
                 {/* News item*/}
                 <div className="mb-4">
                   <div className="small text-muted">May 12, 2022</div>
-                  <a className="link-dark" href="#!">
+                  <Link className="link-dark" to="#!">
                     <h3>
                       Start Bootstrap releases Bootstrap 5 updates for templates
                       and themes
                     </h3>
-                  </a>
+                  </Link>
                 </div>
                 {/* News item*/}
                 <div className="mb-5">
                   <div className="small text-muted">May 5, 2022</div>
-                  <a className="link-dark" href="#!">
+                  <Link className="link-dark" to="#!">
                     <h3>Bootstrap 5 has officially landed</h3>
-                  </a>
+                  </Link>
                 </div>
                 {/* News item*/}
                 <div className="mb-5">
                   <div className="small text-muted">Apr 21, 2022</div>
-                  <a className="link-dark" href="#!">
+                  <Link className="link-dark" to="#!">
                     <h3>
                       This is another news article headline, but this one is a
                       little bit longer
                     </h3>
-                  </a>
+                  </Link>
                 </div>
                 <div className="text-end mb-5 mb-xl-0">
-                  <a className="text-decoration-none" href="#!">
+                  <Link className="text-decoration-none" to="#!">
                     More news
                     <i className="bi bi-arrow-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-xl-4">
@@ -203,21 +203,21 @@ export default function blog_home() {
                         <p className="text-muted mb-4">
                           For press inquiries, email us at
                           <br />
-                          <a href="#!">press@domain.com</a>
+                          <Link to="#!">press@domain.com</Link>
                         </p>
                         <div className="h6 fw-bolder">Follow us</div>
-                        <a className="fs-5 px-2 link-dark" href="#!">
+                        <Link className="fs-5 px-2 link-dark" to="#!">
                           <i className="bi-twitter" />
-                        </a>
-                        <a className="fs-5 px-2 link-dark" href="#!">
+                        </Link>
+                        <Link className="fs-5 px-2 link-dark" to="#!">
                           <i className="bi-facebook" />
-                        </a>
-                        <a className="fs-5 px-2 link-dark" href="#!">
+                        </Link>
+                        <Link className="fs-5 px-2 link-dark" to="#!">
                           <i className="bi-linkedin" />
-                        </a>
-                        <a className="fs-5 px-2 link-dark" href="#!">
+                        </Link>
+                        <Link className="fs-5 px-2 link-dark" to="#!">
                           <i className="bi-youtube" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -242,12 +242,12 @@ export default function blog_home() {
                     <div className="badge bg-primary bg-gradient rounded-pill mb-2">
                       News
                     </div>
-                    <a
+                    <Link
                       className="text-decoration-none link-dark stretched-link"
-                      href="#!"
+                      to="#!"
                     >
                       <div className="h5 card-title mb-3">Blog post title</div>
-                    </a>
+                    </Link>
                     <p className="card-text mb-0">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
@@ -283,14 +283,14 @@ export default function blog_home() {
                     <div className="badge bg-primary bg-gradient rounded-pill mb-2">
                       Media
                     </div>
-                    <a
+                    <Link
                       className="text-decoration-none link-dark stretched-link"
-                      href="#!"
+                      to="#!"
                     >
                       <div className="h5 card-title mb-3">
                         Another blog post title
                       </div>
-                    </a>
+                    </Link>
                     <p className="card-text mb-0">
                       This text is a bit longer to illustrate the adaptive
                       height of each card. Some quick example text to build on
@@ -327,15 +327,15 @@ export default function blog_home() {
                     <div className="badge bg-primary bg-gradient rounded-pill mb-2">
                       News
                     </div>
-                    <a
+                    <Link
                       className="text-decoration-none link-dark stretched-link"
-                      href="#!"
+                      to="#!"
                     >
                       <div className="h5 card-title mb-3">
                         The last blog post title is a little bit longer than the
                         others
                       </div>
-                    </a>
+                    </Link>
                     <p className="card-text mb-0">
                       Some more quick example text to build on the card title
                       and make up the bulk of the card's content.
@@ -362,10 +362,10 @@ export default function blog_home() {
               </div>
             </div>
             <div className="text-end mb-5 mb-xl-0">
-              <a className="text-decoration-none" href="#!">
+              <Link className="text-decoration-none" to="#!">
                 More stories
                 <i className="bi bi-arrow-right" />
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -380,17 +380,17 @@ export default function blog_home() {
               </div>
             </div>
             <div className="col-auto">
-              <a className="link-light small" href="#!">
+              <Link className="link-light small" to="#!">
                 Privacy
-              </a>
+              </Link>
               <span className="text-white mx-1">·</span>
-              <a className="link-light small" href="#!">
+              <Link className="link-light small" to="#!">
                 Terms
-              </a>
+              </Link>
               <span className="text-white mx-1">·</span>
-              <a className="link-light small" href="#!">
+              <Link className="link-light small" to="#!">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </div>
