@@ -11,6 +11,7 @@ import Index from "./views/index";
 import Portfolio_item from "./views/portfolio-item";
 import Portfolio_overview from "./views/portfolio-overview";
 import Pricing from "./views/pricing";
+import Nav_bar from "./views/nav_bar";
 
 //create your first component
 const Layout = () => {
@@ -22,6 +23,7 @@ const Layout = () => {
 		<div>
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
+					<Nav_bar />
 					<Switch>
 						<Route exact path="/">
 							<Index />
