@@ -3,121 +3,155 @@ import { Link } from "react-router-dom";
 
 export default function index() {
   return (
-    <main className="flex-shrink-0">
-      {/* Header*/}
-      <header className="bg-dark py-5">
-        <div className="container px-5">
-          <div className="row gx-5 align-items-center justify-content-center">
-            <div className="col-lg-8 col-xl-7 col-xxl-6">
-              <div className="my-5 text-center text-xl-start">
-                <h1 className="display-5 fw-bolder text-white mb-2">
-                  A Bootstrap 5 template for modern businesses
-                </h1>
-                <p className="lead fw-normal text-white-50 mb-4">
-                  Quickly design and customize responsive mobile-first sites
-                  with Bootstrap, the world’s most popular front-end open source
-                  toolkit!
-                </p>
-                <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                  <a
-                    className="btn btn-primary btn-lg px-4 me-sm-3"
-                    href="#features"
+    <>
+      <div className="card mb-4">
+        <div className="row g-0">
+          <div className="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1657299143437-b63ce1fc01aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60"
+              className="img-fluid"
+              alt="..."
+            />
+          </div>
+          <div className="col-md-8">
+            <div className="card-body">
+              <h5 className="card-title">Contento señor contento</h5>
+              <p className="card-text">
+                Aprende desde casa con clases particulares online Elige entre
+                miles de profesores en línea de todo el mundo y recibe clases
+                orientadas a tu objetivo.
+              </p>
+              <p className="card-text">
+              <Link
+                    className="btn btn-dark"
+                    to="#register"
                   >
-                    Get Started
-                  </a>
-                  <a className="btn btn-outline-light btn-lg px-4" href="#!">
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
-              <img
-                className="img-fluid rounded-3 my-5"
-                src="https://dummyimage.com/600x400/343a40/6c757d"
-                alt="..."
-              />
+                  Register here
+                </Link>
+              </p>
             </div>
           </div>
         </div>
-      </header>
-      {/* Features section*/}
-      <section className="py-5" id="features">
-        <div className="container px-5 my-5">
-          <div className="row gx-5">
-            <div className="col-lg-4 mb-5 mb-lg-0">
-              <h2 className="fw-bolder mb-0">
-                A better way to start building.
-              </h2>
-            </div>
-            <div className="col-lg-8">
-              <div className="row gx-5 row-cols-1 row-cols-md-2">
-                <div className="col mb-5 h-100">
-                  <div className="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-                    <i className="bi bi-collection" />
-                  </div>
-                  <h2 className="h5">Featured title</h2>
-                  <p className="mb-0">
-                    Paragraph of text beneath the heading to explain the
-                    heading. Here is just a bit more text.
-                  </p>
-                </div>
-                <div className="col mb-5 h-100">
-                  <div className="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-                    <i className="bi bi-building" />
-                  </div>
-                  <h2 className="h5">Featured title</h2>
-                  <p className="mb-0">
-                    Paragraph of text beneath the heading to explain the
-                    heading. Here is just a bit more text.
-                  </p>
-                </div>
-                <div className="col mb-5 mb-md-0 h-100">
-                  <div className="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-                    <i className="bi bi-toggles2" />
-                  </div>
-                  <h2 className="h5">Featured title</h2>
-                  <p className="mb-0">
-                    Paragraph of text beneath the heading to explain the
-                    heading. Here is just a bit more text.
-                  </p>
-                </div>
-                <div className="col h-100">
-                  <div className="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-                    <i className="bi bi-toggles2" />
-                  </div>
-                  <h2 className="h5">Featured title</h2>
-                  <p className="mb-0">
-                    Paragraph of text beneath the heading to explain the
-                    heading. Here is just a bit more text.
-                  </p>
-                </div>
-              </div>
+      </div>
+      {/*  card-group */}
+      <div className="row row-cols-1 row-cols-md-2 g-4" id="#first-path">
+        <div className="col">
+          <div className="card">
+            <img src="..." className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      {/* Testimonial section*/}
-      <div className="py-5 bg-light">
-        <div className="container px-5 my-5">
-          <div className="row gx-5 justify-content-center">
-            <div className="col-lg-10 col-xl-7">
-              <div className="text-center">
-                <div className="fs-4 mb-4 fst-italic">
-                  "Working with Start Bootstrap templates has saved me tons of
-                  development time when building new projects! Starting with a
-                  Bootstrap template just makes things easier!"
-                </div>
-                <div className="d-flex align-items-center justify-content-center">
-                  <img
-                    className="rounded-circle me-3"
-                    src="https://dummyimage.com/40x40/ced4da/6c757d"
-                    alt="..."
-                  />
-                  <div className="fw-bold">
-                    Tom Ato
-                    <span className="fw-bold text-primary mx-1">/</span>
-                    CEO, Pomodoro
+        <div className="col">
+          <div className="card">
+            <img src="..." className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* register */}
+      <div className="container-register" id="register">
+        <div className="card o-hidden border-0 shadow-lg my-5">
+          <div className="card-body p-0">
+            {/* Nested Row within Card Body */}
+            <div className="row">
+              <div className="col-lg-5 d-none d-lg-block bg-register-image" />
+              <div className="col-lg-7">
+                <div className="p-5">
+                  <div className="text-center">
+                    <h1 className="h4 text-gray-900 mb-4">
+                      Create an Account!
+                    </h1>
+                  </div>
+                  <form className="user">
+                    <div className="form-group row">
+                      <div className="col-sm-6 mb-3 mb-sm-0">
+                        <input
+                          type="text"
+                          className="form-control form-control-user"
+                          id="exampleFirstName"
+                          placeholder="First Name"
+                        />
+                      </div>
+                      <div className="col-sm-6">
+                        <input
+                          type="text"
+                          className="form-control form-control-user"
+                          id="exampleLastName"
+                          placeholder="Last Name"
+                        />
+                      </div>
+                    </div>
+                    <div className="form-group">
+                      <input
+                        type="email"
+                        className="form-control form-control-user"
+                        id="exampleInputEmail"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                    <div className="form-group row">
+                      <div className="col-sm-6 mb-3 mb-sm-0">
+                        <input
+                          type="password"
+                          className="form-control form-control-user"
+                          id="exampleInputPassword"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div className="col-sm-6">
+                        <input
+                          type="password"
+                          className="form-control form-control-user"
+                          id="exampleRepeatPassword"
+                          placeholder="Repeat Password"
+                        />
+                      </div>
+                    </div>
+                    <Link
+                      to="login.html"
+                      className="btn btn-primary btn-user btn-block"
+                    >
+                      Register Account
+                    </Link>
+                    <hr />
+                    <Link
+                      to="index.html"
+                      className="btn btn-google btn-user btn-block"
+                    >
+                      <i className="fab fa-google fa-fw" /> Register with Google
+                    </Link>
+                    <Link
+                      to="index.html"
+                      className="btn btn-facebook btn-user btn-block"
+                    >
+                      <i className="fab fa-facebook-f fa-fw" /> Register with
+                      Facebook
+                    </Link>
+                  </form>
+                  <hr />
+                  <div className="text-center">
+                    <Link className="small" to="forgot-password.html">
+                      Forgot Password?
+                    </Link>
+                  </div>
+                  <div className="text-center">
+                    <Link className="small" to="login.html">
+                      Already have an account? Login!
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -125,185 +159,6 @@ export default function index() {
           </div>
         </div>
       </div>
-      {/* Blog preview section*/}
-      <section className="py-5">
-        <div className="container px-5 my-5">
-          <div className="row gx-5 justify-content-center">
-            <div className="col-lg-8 col-xl-6">
-              <div className="text-center">
-                <h2 className="fw-bolder">From our blog</h2>
-                <p className="lead fw-normal text-muted mb-5">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Eaque fugit ratione dicta mollitia. Officiis ad.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="row gx-5">
-            <div className="col-lg-4 mb-5">
-              <div className="card h-100 shadow border-0">
-                <img
-                  className="card-img-top"
-                  src="https://dummyimage.com/600x350/ced4da/6c757d"
-                  alt="..."
-                />
-                <div className="card-body p-4">
-                  <div className="badge bg-primary bg-gradient rounded-pill mb-2">
-                    News
-                  </div>
-                  <a
-                    className="text-decoration-none link-dark stretched-link"
-                    href="#!"
-                  >
-                    <h5 className="card-title mb-3">Blog post title</h5>
-                  </a>
-                  <p className="card-text mb-0">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
-                <div className="card-footer p-4 pt-0 bg-transparent border-top-0">
-                  <div className="d-flex align-items-end justify-content-between">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="rounded-circle me-3"
-                        src="https://dummyimage.com/40x40/ced4da/6c757d"
-                        alt="..."
-                      />
-                      <div className="small">
-                        <div className="fw-bold">Kelly Rowan</div>
-                        <div className="text-muted">
-                          March 12, 2022 · 6 min read
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-5">
-              <div className="card h-100 shadow border-0">
-                <img
-                  className="card-img-top"
-                  src="https://dummyimage.com/600x350/adb5bd/495057"
-                  alt="..."
-                />
-                <div className="card-body p-4">
-                  <div className="badge bg-primary bg-gradient rounded-pill mb-2">
-                    Media
-                  </div>
-                  <a
-                    className="text-decoration-none link-dark stretched-link"
-                    href="#!"
-                  >
-                    <h5 className="card-title mb-3">Another blog post title</h5>
-                  </a>
-                  <p className="card-text mb-0">
-                    This text is a bit longer to illustrate the adaptive height
-                    of each card. Some quick example text to build on the card
-                    title and make up the bulk of the card's content.
-                  </p>
-                </div>
-                <div className="card-footer p-4 pt-0 bg-transparent border-top-0">
-                  <div className="d-flex align-items-end justify-content-between">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="rounded-circle me-3"
-                        src="https://dummyimage.com/40x40/ced4da/6c757d"
-                        alt="..."
-                      />
-                      <div className="small">
-                        <div className="fw-bold">Josiah Barclay</div>
-                        <div className="text-muted">
-                          March 23, 2022 · 4 min read
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 mb-5">
-              <div className="card h-100 shadow border-0">
-                <img
-                  className="card-img-top"
-                  src="https://dummyimage.com/600x350/6c757d/343a40"
-                  alt="..."
-                />
-                <div className="card-body p-4">
-                  <div className="badge bg-primary bg-gradient rounded-pill mb-2">
-                    News
-                  </div>
-                  <a
-                    className="text-decoration-none link-dark stretched-link"
-                    href="#!"
-                  >
-                    <h5 className="card-title mb-3">
-                      The last blog post title is a little bit longer than the
-                      others
-                    </h5>
-                  </a>
-                  <p className="card-text mb-0">
-                    Some more quick example text to build on the card title and
-                    make up the bulk of the card's content.
-                  </p>
-                </div>
-                <div className="card-footer p-4 pt-0 bg-transparent border-top-0">
-                  <div className="d-flex align-items-end justify-content-between">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="rounded-circle me-3"
-                        src="https://dummyimage.com/40x40/ced4da/6c757d"
-                        alt="..."
-                      />
-                      <div className="small">
-                        <div className="fw-bold">Evelyn Martinez</div>
-                        <div className="text-muted">
-                          April 2, 2022 · 10 min read
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Call to action*/}
-          <aside className="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
-            <div className="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
-              <div className="mb-4 mb-xl-0">
-                <div className="fs-3 fw-bold text-white">
-                  New products, delivered to you.
-                </div>
-                <div className="text-white-50">
-                  Sign up for our newsletter for the latest updates.
-                </div>
-              </div>
-              <div className="ms-xl-4">
-                <div className="input-group mb-2">
-                  <input
-                    className="form-control"
-                    type="text"
-                    placeholder="Email address..."
-                    aria-label="Email address..."
-                    aria-describedby="button-newsletter"
-                  />
-                  <button
-                    className="btn btn-outline-light"
-                    id="button-newsletter"
-                    type="button"
-                  >
-                    Sign up
-                  </button>
-                </div>
-                <div className="small text-white-50">
-                  We care about privacy, and will never share your data.
-                </div>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </section>
-    </main>
+    </>
   );
 }
