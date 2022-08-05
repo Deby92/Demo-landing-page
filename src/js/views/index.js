@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function index() {
   return (
     <>
-      <div className="card mb-4">
+      <div className="card mb-4 bg-transparent">
         <div className="row g-0">
           <div className="col-md-4">
             <img
@@ -14,7 +14,7 @@ export default function index() {
             />
           </div>
           <div className="col-md-8">
-            <div className="card-body">
+            <div className="card-body text-center">
               <h5 className="card-title">Contento señor contento</h5>
               <p className="card-text">
                 Aprende desde casa con clases particulares online Elige entre
@@ -22,143 +22,120 @@ export default function index() {
                 orientadas a tu objetivo.
               </p>
               <p className="card-text">
-              <Link
-                    className="btn btn-dark"
-                    to="#register"
-                  >
+                <a className="btn btn-dark" href="#register_here">
                   Register here
-                </Link>
+                </a>
               </p>
             </div>
           </div>
         </div>
       </div>
       {/*  card-group */}
-      <div className="row row-cols-1 row-cols-md-2 g-4" id="#first-path">
+      <div className="row row-cols-1 row-cols-md-2 g-4" id="">
         <div className="col">
-          <div className="card">
-            <img src="..." className="card-img-top" alt="..." />
+          <div className="card bg-transparent">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZeOVfERUx09oXylteH6YHzHOgEpo4slDQ-w&usqp=CAU" className="card-img-top" style={{ width: 614, height:150 }} alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Tu eliges</h5>
               <p className="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Te ayudamos a buscar tu clase, segun tus intereses y desarrollamos la mejor lista de clases personalizadas para ti, nos adaptamos a tus horarios y nuestros guias te dan una evaluacion, solo debes dejar un video mostrando tus progresos.
               </p>
             </div>
           </div>
         </div>
         <div className="col">
-          <div className="card">
-            <img src="..." className="card-img-top" alt="..." />
+          <div className="card bg-transparent">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZeOVfERUx09oXylteH6YHzHOgEpo4slDQ-w&usqp=CAU" className="card-img-top" style={{ width: 614, height:150 }} alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
+              <h5 className="card-title">Primera clase sin costo</h5>
               <p className="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Puedes escoger una clase sin costo para ti, asi puedes decidir si quieres seguir con la misma clase o cambiarte a otra clase de tu interes antes de que se te haga algún cobro adicional. No te arrepentiras!
               </p>
             </div>
           </div>
         </div>
       </div>
       {/* register */}
-      <div className="container-register" id="register">
-        <div className="card o-hidden border-0 shadow-lg my-5">
-          <div className="card-body p-0">
-            {/* Nested Row within Card Body */}
-            <div className="row">
-              <div className="col-lg-5 d-none d-lg-block bg-register-image" />
-              <div className="col-lg-7">
-                <div className="p-5">
-                  <div className="text-center">
-                    <h1 className="h4 text-gray-900 mb-4">
-                      Create an Account!
-                    </h1>
-                  </div>
-                  <form className="user">
-                    <div className="form-group row">
-                      <div className="col-sm-6 mb-3 mb-sm-0">
+      <section
+        className="vh-100 bg-transparent  my-3" id="register_here"
+      >
+        <div className="mask d-flex align-items-center h-100 gradient-custom-3">
+          <div className="container h-100">
+            <div className="row d-flex justify-content-center align-items-center h-100">
+              <div className="col-12 col-md-6 col-md-6 col-md-4">
+                <div className="card" style={{ borderRadius: 15 }}>
+                  <div className="card-body p-5">
+                    <h2 className="text-uppercase text-center mb-5">
+                      Create an account
+                    </h2>
+                    <form>
+                      <div className="d-flex flex-row align-items-center mb-4"><i className="fas fa-user fa-lg me-3 fa-fw"></i>
                         <input
                           type="text"
-                          className="form-control form-control-user"
-                          id="exampleFirstName"
-                          placeholder="First Name"
+                          id="form3Example1cg"
+                          className="form-control form-control-lg" placeholder="Your Name"
                         />
                       </div>
-                      <div className="col-sm-6">
+                      <div className="d-flex flex-row align-items-center mb-4"><i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
                         <input
-                          type="text"
-                          className="form-control form-control-user"
-                          id="exampleLastName"
-                          placeholder="Last Name"
+                          type="email"
+                          id="form3Example3cg"
+                          className="form-control form-control-lg" placeholder="E-mail"
                         />
                       </div>
-                    </div>
-                    <div className="form-group">
-                      <input
-                        type="email"
-                        className="form-control form-control-user"
-                        id="exampleInputEmail"
-                        placeholder="Email Address"
-                      />
-                    </div>
-                    <div className="form-group row">
-                      <div className="col-sm-6 mb-3 mb-sm-0">
+                      <div className="d-flex flex-row align-items-center mb-4"><i className="fas fa-lock fa-lg me-3 fa-fw"></i>
                         <input
                           type="password"
-                          className="form-control form-control-user"
-                          id="exampleInputPassword"
-                          placeholder="Password"
+                          id="form3Example4cg"
+                          className="form-control form-control-lg" placeholder="Password"
                         />
                       </div>
-                      <div className="col-sm-6">
+                      <div className="d-flex flex-row align-items-center mb-4 "><i className="fas fa-key fa-lg me-3 fa-fw"></i>
                         <input
                           type="password"
-                          className="form-control form-control-user"
-                          id="exampleRepeatPassword"
-                          placeholder="Repeat Password"
+                          id="form3Example4cdg"
+                          className="form-control form-control-lg" placeholder="Repeat Password"
                         />
                       </div>
-                    </div>
-                    <Link
-                      to="login.html"
-                      className="btn btn-primary btn-user btn-block"
-                    >
-                      Register Account
-                    </Link>
-                    <hr />
-                    <Link
-                      to="index.html"
-                      className="btn btn-google btn-user btn-block"
-                    >
-                      <i className="fab fa-google fa-fw" /> Register with Google
-                    </Link>
-                    <Link
-                      to="index.html"
-                      className="btn btn-facebook btn-user btn-block"
-                    >
-                      <i className="fab fa-facebook-f fa-fw" /> Register with
-                      Facebook
-                    </Link>
-                  </form>
-                  <hr />
-                  <div className="text-center">
-                    <Link className="small" to="forgot-password.html">
-                      Forgot Password?
-                    </Link>
-                  </div>
-                  <div className="text-center">
-                    <Link className="small" to="login.html">
-                      Already have an account? Login!
-                    </Link>
+                      <div className="form-check d-flex justify-content-center mb-5">
+                        <input
+                          className="form-check-input me-2"
+                          type="checkbox"
+                          defaultValue=""
+                          id="form2Example3cg"
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="form2Example3g"
+                        >
+                          I agree all statements in{" "}
+                          <a href="#!" className="text-body">
+                            <u>Terms of service</u>
+                          </a>
+                        </label>
+                      </div>
+                      <div className="d-flex justify-content-center">
+                        <button
+                          type="button"
+                          className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                        >
+                          Register
+                        </button>
+                      </div>
+                      <p className="text-center text-muted mt-5 mb-0">
+                        Have already an account?{" "}
+                        <a href="#!" className="fw-bold text-body">
+                          <u>Login here</u>
+                        </a>
+                      </p>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
