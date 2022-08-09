@@ -1,11 +1,13 @@
 
 import { Link } from "react-router-dom";
 import "../../styles/nav_bar.css";
+import { Context } from "../store/appContext";
 import React, { useContext, useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
 
 export default function nav_bar() {
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(false);
+  const { actions } = useContext(Context);
 
   return (
     <>
