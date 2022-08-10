@@ -73,8 +73,8 @@ export default function nav_bar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/private">
-                    Activities
+                  <Link className="nav-link" to="/private_teacher">
+                    Entrar como profesor
                   </Link>
                 </li>
                 <li className="nav-item">

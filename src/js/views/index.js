@@ -38,7 +38,7 @@ export default function index() {
       </div>
       {/*  card-group */}
       <div className="row card-group row-cols-md-2 py-5 mx-3 justify-content-center">
-        <div className="card mb-3" style={{ maxWidth: 540 }}>
+        <div className="card mb-3 rounded" style={{ maxWidth: 540 }}>
           <div className="row justify-content-between">
             <div className="col-md-6 ps-0">
               <img
@@ -47,7 +47,7 @@ export default function index() {
                   backgroundAttachment: "fixed",
                   backgroundSize: "cover",
                 }}
-                className="img-card"
+                className="img-card rounded-start"
                 alt="..."
               />
             </div>
@@ -132,7 +132,7 @@ export default function index() {
                           placeholder="Password"
                         />
                       </div>
-                      <div className="d-flex flex-row align-items-center mb-4 ">
+                      <div className="d-flex flex-row align-items-center mb-4 d-flex justify-content-center">
                         <i className="fas fa-key fa-lg me-3 fa-fw"></i>
                         <input
                           type="password"
