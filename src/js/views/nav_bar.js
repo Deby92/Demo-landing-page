@@ -8,6 +8,9 @@ import { Squash as Hamburger } from 'hamburger-react';
 export default function nav_bar() {
   const [isOpen, setOpen] = useState(false);
   const { actions } = useContext(Context);
+  const [sidebar, setSidebar] = useState(false);
+  const showSidebar = () => setSidebar(!sidebar);
+
 
   return (
     <>
@@ -30,18 +33,16 @@ export default function nav_bar() {
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
           >
-            <Hamburger toggled={isOpen} toggle={setOpen} size={20} color="#4FD1C5"/>
+            <Hamburger toggled={isOpen} toggle={setOpen} size={20} color="#4FD1C5" onClick={showSidebar}/>
           </button>
           <div
-            className="offcanvas offcanvas-start text-light bg-dark"
+            className="offcanvas offcanvas-start bg-dark"
             tabIndex={-1}
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div className="offcanvas-header bg-gradient">
-              <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-                Menu
-              </h5>
+            <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+            <div className="offcanvas-header bg-gradient" onClick={showSidebar}>
               <button
                 type="button"
                 className="btn-close btn-close-white"
@@ -115,15 +116,14 @@ export default function nav_bar() {
                     <li>
                       <hr className="dropdown-divider bg-info" />
                     </li>
-                    <li>
-                      <Link className="dropdown-item" to="/login">
-                        Logout
-                      </Link>
+                    <li className="dropdown-item" onClick={() => actions.handleLogout()}>
+                      Logout
                     </li>
                   </ul>
                 </li>
               </ul>
             </div>
+            </nav>
           </div>
         </div>
       </nav>

@@ -15,17 +15,7 @@ export default function private_teacher() {
                   backgroundImage:
                     "url(https://bootdey.com/img/Content/bg1.jpg)",
                 }}
-              >
-                <div
-                  className="info-label"
-                  data-toggle="tooltip"
-                  title=""
-                  data-original-title="You currently have 290 Reward Points to spend"
-                >
-                  <i className="icon-medal" />
-                  290 points
-                </div>
-              </div>
+              ></div>
               <div className="user-info">
                 <div className="user-avatar">
                   <a className="edit-avatar" href="#" />
@@ -41,222 +31,150 @@ export default function private_teacher() {
               </div>
             </aside>
             <nav className="list-group">
-              <a className="list-group-item with-badge" href="#">
-                <i className="fa fa-th" />
-                Orders<span className="badge badge-primary badge-pill">6</span>
+              <a className="list-group-item" href="/profile">
+                <i className="fa fa-map" />
+                Datos personales
               </a>
-              <a className="list-group-item" href="#">
-                <i className="fa fa-user" />
-                Profile
+              <a className="list-group-item with-badge" href="!#">
+                <i className="fas fa-glasses"></i>
+                Feed-back{" "}
+                <span className="badge badge-primary badge-pill">4</span>
+              </a>
+              <a className="list-group-item with-badge" href="#">
+                <i className="fas fa-graduation-cap"></i>
+                Estudiantes
+                <span className="badge badge-primary badge-pill">43</span>
               </a>
               <a className="list-group-item" href="#">
                 <i className="fa fa-map" />
-                Addresses
+                Agregar/Eliminar clase
               </a>
-              <a className="list-group-item with-badge" href="#">
-                <i className="fa fa-heart" />
-                Wishlist
-                <span className="badge badge-primary badge-pill">3</span>
-              </a>
-              <a className="list-group-item with-badge active" href="#">
-                <i className="fa fa-tag" />
-                My Tickets
+              <a className="list-group-item with-badge" href="#!">
+                <i className="fa fa-dollar-sign"></i>
+                Mis ganancias
                 <span className="badge badge-primary badge-pill">4</span>
               </a>
             </nav>
           </div>
           <div className="col-lg-8">
+            <div className="container">
+              <h1>Agrega una clase a tu perfil</h1>
+            </div>
             <div className="padding-top-2x mt-2 hidden-lg-up" />
-            {/* Messages*/}
             <div className="comment">
-              <div className="comment-body">
-                <p className="comment-text">
-                  Descripcion At vero eos et accusamus et iusto odio dignissimos
-                  ducimus qui blanditiis praesentium voluptatum deleniti atque
-                  corrupti quos dolores et quas molestias excepturi sint
-                  occaecati cupiditate non provident, similique sunt in culpa
-                  qui officia deserunt mollitia animi.
-                </p>
-                <div className="comment-footer">
-                  <span className="comment-meta">Daniel Adams</span>
-                </div>
+              <div className="comment-author-ava">
+                <img
+                  src="https://www.pinpng.com/pngs/m/207-2077375_png-libros-book-emoji-transparent-png.png"
+                  alt="Avatar"
+                />
               </div>
+              <>
+                <div className="mb-3">
+                  <label
+                    htmlFor="exampleFormControlInput1"
+                    className="form-label"
+                  >
+                    Titulo de la clase:
+                  </label>
+                  <input
+                    type="title"
+                    className="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Escribe un titulo aqui"
+                  />
+                </div>
+                <div className="mb-3">
+                  <label
+                    htmlFor="exampleFormControlTextarea1"
+                    className="form-label"
+                  >
+                    Describe la clase que quieres realizar
+                  </label>
+                  <textarea
+                    className="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows={3}
+                    defaultValue=""
+                  />
+                </div>
+              </>
             </div>
             <div className="comment">
               <div className="comment-author-ava">
                 <img
-                  src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                  src="https://images.emojiterra.com/twitter/v13.1/512px/1f4fc.png"
                   alt="Avatar"
                 />
               </div>
-              <div className="comment-body">
-                <p className="comment-text">Video colocar video descritivo</p>
-                <div className="comment-footer">
-                  <span className="comment-meta">Jacob Hammond, Staff</span>
-                </div>
+              <label htmlFor="basic-url" className="form-label">
+                Agregar URL de un video de tu clase:
+              </label>
+              <div className="input-group mb-3">
+                <span className="input-group-text" id="basic-addon3">
+                  https://www.youtube.com/
+                </span>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="basic-url"
+                  aria-describedby="basic-addon3"
+                />
               </div>
+            </div>
+            <div className="comment col-md-6">
+              <label htmlFor="basic-url" className="form-label">
+                Agregar un precio tu clase:
+              </label>
+              <div className="input-group">
+                <span className="input-group-text">$</span>
+                <input
+                  type="text-end"
+                  className="form-control"
+                  aria-label="Dollar amount (with dot and two decimal places)"
+                />
+              </div>
+            </div>
+            <div className="container">
+              <h1>Selecciona una categoria</h1>
+            </div>
+            <div className="form-floating">
+              <select
+                className="form-select mb-4"
+                id="floatingSelect"
+                aria-label="Floating label select example"
+              >
+                <option selected>Abre para ver las categorias</option>
+                <option value="1">Espiritualidad</option>
+                <option value="2">Gamming</option>
+                <option value="3">Salud y autocuidado</option>
+                <option value="1">Outdoor</option>
+                <option value="2">Beauty & Fashion</option>
+                <option value="3">Habilidades sociales</option>
+                <option value="1">Cuidado de mascotas</option>
+                <option value="2">Cuidado del hogar</option>
+                <option value="3">Hobbies</option>
+                <option value="3">Sustentabilidad</option>
+              </select>
+              <label for="floatingSelect">Selecciona un servicio</label>
             </div>
             <div className="comment">
               <div className="comment-author-ava">
                 <img
-                  src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                  src="https://w7.pngwing.com/pngs/844/613/png-transparent-computer-keyboard-emoji-symbol-emoticon-character-emoji-pencil-computer-keyboard-orange.png"
                   alt="Avatar"
                 />
               </div>
               <div className="comment-body">
-                <p className="comment-text">
-                  Clases Asignadas Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                </p>
+                <p className="comment-text">Yoga (principiantes)</p>
+                <p className="comment-text">Hikking (senderismo preparado)</p>
+                <p className="comment-text">Meditacion ()</p>
               </div>
             </div>
             {/* Reply Form*/}
             <form>
-              <div class="form-floating">
-                <select
-                  class="form-select"
-                  id="floatingSelect"
-                  aria-label="Floating label select example"
-                >
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <label for="floatingSelect">Works with selects</label>
-              </div>
-              <form>
-                {/* 2 column grid layout with text inputs for the first and last names */}
-                <div className="row mb-4">
-                  <div className="col">
-                    <div className="form-outline">
-                      <input
-                        type="text"
-                        id="form6Example1"
-                        className="form-control"
-                      />
-                      <label className="form-label" htmlFor="form6Example1">
-                        First name
-                      </label>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <div className="form-outline">
-                      <input
-                        type="text"
-                        id="form6Example2"
-                        className="form-control"
-                      />
-                      <label className="form-label" htmlFor="form6Example2">
-                        Last name
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                {/* Text input */}
-                <div className="form-outline mb-4">
-                  <input
-                    type="text"
-                    id="form6Example3"
-                    className="form-control"
-                  />
-                  <label className="form-label" htmlFor="form6Example3">
-                    Company name
-                  </label>
-                </div>
-                {/* Text input */}
-                <div className="form-outline mb-4">
-                  <input
-                    type="text"
-                    id="form6Example4"
-                    className="form-control"
-                  />
-                  <label className="form-label" htmlFor="form6Example4">
-                    Address
-                  </label>
-                </div>
-                {/* Email input */}
-                <div className="form-outline mb-4">
-                  <input
-                    type="email"
-                    id="form6Example5"
-                    className="form-control"
-                  />
-                  <label className="form-label" htmlFor="form6Example5">
-                    Email
-                  </label>
-                </div>
-                {/* Number input */}
-                <div className="form-outline mb-4">
-                  <input
-                    type="number"
-                    id="form6Example6"
-                    className="form-control"
-                  />
-                  <label className="form-label" htmlFor="form6Example6">
-                    Phone
-                  </label>
-                </div>
-                {/* Message input */}
-                <div className="form-outline mb-4">
-                  <textarea
-                    className="form-control"
-                    id="form6Example7"
-                    rows={4}
-                    defaultValue={""}
-                  />
-                  <label className="form-label" htmlFor="form6Example7">
-                    Additional information
-                  </label>
-                </div>
-                {/* Checkbox */}
-                <div className="form-check d-flex justify-content-center mb-4">
-                  <input
-                    className="form-check-input me-2"
-                    type="checkbox"
-                    defaultValue=""
-                    id="form6Example8"
-                    defaultChecked=""
-                  />
-                  <label className="form-check-label" htmlFor="form6Example8">
-                    {" "}
-                    Create an account?{" "}
-                  </label>
-                </div>
-                {/* Submit button */}
-                <button
-                  type="submit"
-                  className="btn btn-primary btn-block mb-4"
-                >
-                  Place order
-                </button>
-              </form>
-
               <button type="submit" className="btn btn-primary">
                 Submit
               </button>
-            </form>
-
-            <h5 className="mb-30 padding-top-1x">Leave Message</h5>
-            <form method="post">
-              <div className="form-group">
-                <textarea
-                  className="form-control form-control-rounded"
-                  id="review_text"
-                  rows={8}
-                  placeholder="Write your message here..."
-                  required=""
-                  defaultValue={""}
-                />
-              </div>
-              <div className="text-right">
-                <button className="btn btn-outline-primary" type="submit">
-                  Submit Message
-                </button>
-              </div>
             </form>
           </div>
         </div>
