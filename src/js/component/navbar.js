@@ -1,109 +1,126 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import "../../styles/nav_bar.css";
+import { Context } from "../store/appContext";
+import React, { useContext, useState } from 'react';
+import { Squash as Hamburger } from 'hamburger-react';
 
-export const Navbar = () => {
+export default function nav_bar() {
+  const [isOpen, setOpen] = useState(false);
+  const { actions } = useContext(Context);
+  const [sidebar, setSidebar] = useState(false);
+  const showSidebar = () => setSidebar(!sidebar);
+
 
   return (
-<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container px-5">
-        <Link className="navbar-brand" to="/">
-          Start Bootstrap
-        </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Home
+    <>
+      <nav className="navbar navbar-dark bg-dark sticky-top bg-gradient">
+        ink>
+          <ul <div className="container-fluid justify-content-end">
+          <Link className="navbar-brand navbar-right" to="/">
+            Better&Beyond
+          </LclassName="nav navbar-nav navbar-right text-light">
+            <li>
+              <Link to="/login" >
+                <span className="user-icon text-white" /><i className="fas fa-user fa-lg me-3 fa-fw"></i>
               </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">
-                Contact
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/pricing">
-                Pricing
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/faq">
-                FAQ
-              </Link>
-            </li>
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                id="navbarDropdownBlog"
-                to="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Blog
-              </Link>
-              <ul
-                className="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdownBlog"
-              >
-                <li>
-                  <Link className="dropdown-item" to="/blog-home">
-                    Blog Home
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/blog-post">
-                    Blog Post
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                id="navbarDropdownPortfolio"
-                to="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Portfolio
-              </Link>
-              <ul
-                className="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdownPortfolio"
-              >
-                <li>
-                  <Link className="dropdown-item" to="/portfolio-overview">
-                    Portfolio Overview
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/portfolio-item">
-                    Portfolio Item
-                  </Link>
-                </li>
-              </ul>
             </li>
           </ul>
+          <button
+            className="navbar-toggler position-absolute top-1 start-0 m-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <Hamburger toggled={isOpen} toggle={setOpen} size={20} color="#4FD1C5" onClick={showSidebar}/>
+          </button>
+          <div
+            className="offcanvas menu-left offcanvas-start bg-dark"
+            tabIndex={-1}
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+            <div className="offcanvas-header bg-gradient mt-5" onClick={showSidebar}>
+              
+            </div>
+            <div className="offcanvas-body">
+              <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <form className="d-flex">
+                  <input
+                    className="form-control me-2 bg-transparent text-white"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button className="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+                <li className="nav-item">
+                  <Link className="nav-link active" aria-current="page" to="/">
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/private">
+                    My Classes
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/private_teacher">
+                    Entrar como profesor
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/private">
+                    Messages
+                  </Link>
+                </li>
+                <li className="nav-item dropdown m-3">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    to="#"
+                    id="offcanvasNavbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Settings
+                  </Link>
+                  <ul
+                    className="dropdown-menu bg-info"
+                    aria-labelledby="offcanvasNavbarDropdown"
+                  >
+                    <li>
+                      <Link className="dropdown-item" to="/profile">
+                        Profile
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/profile">
+                        Preferences
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="#">
+                        Another action
+                      </Link>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider bg-info" />
+                    </li>
+                    <li className="dropdown-item" onClick={() => actions.handleLogout()}>
+                      Logout
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            </nav>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
-};
+}

@@ -13,6 +13,8 @@ import Portfolio_overview from "./views/portfolio-overview";
 import Pricing from "./views/pricing";
 import Nav_bar from "./views/nav_bar";
 import Private_teacher from "./views/private_teacher";
+import Register from "./views/register";
+import Login from "./views/login";
 
 //create your first component
 const Layout = () => {
@@ -31,6 +33,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/about">
 							<About />
+						</Route>
+						<Route exact path="/login">
+							<Login />
 						</Route>
 						<Route exact path="/blog-home">
 							<Blog_home />
@@ -55,6 +60,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/pricing">
 							<Pricing />
+						</Route>
+						<Route exact path="/register">
+							<Register />
 						</Route>
 						<Route>
 							<h1>Not found!</h1>
