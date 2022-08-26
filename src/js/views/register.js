@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Context } from '../store/appContext';
+import "../../styles/register.css";
 
 const Register = () => {
     const { store, actions } = useContext(Context);
@@ -96,7 +97,9 @@ const Register = () => {
                                                     className="form-check-input me-2"
                                                     type="checkbox"
                                                     defaultValue=""
-                                                    id="form2Example3cg"
+                                                    id="form-checkbox"
+                                                    required
+                                                    style={{display: "inline-block",}} 
                                                 />
                                                 <label
                                                     className="form-check-label"

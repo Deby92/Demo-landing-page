@@ -15,6 +15,7 @@ import Nav_bar from "./views/nav_bar";
 import Private_teacher from "./views/private_teacher";
 import Register from "./views/register";
 import Login from "./views/login";
+import Profile from './views/profile'
 
 //create your first component
 const Layout = () => {
@@ -36,6 +37,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/login">
 							<Login />
+						</Route>
+						<Route exact path="/profile">
+							<Profile />
 						</Route>
 						<Route exact path="/blog-home">
 							<Blog_home />

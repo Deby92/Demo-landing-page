@@ -5,7 +5,7 @@ import "../../styles/private_teacher.css";
 export default function private_teacher() {
   return (
     <>
-      <div className="container padding-bottom-3x mb-2">
+      <div className="container padding-bottom-3x mb-2 mt-4">
         <div className="row">
           <div className="col-lg-4">
             <aside className="user-info-wrapper">
@@ -18,7 +18,7 @@ export default function private_teacher() {
               ></div>
               <div className="user-info">
                 <div className="user-avatar">
-                  <a className="edit-avatar" href="#" />
+                  
                   <img
                     src="https://bootdey.com/img/Content/avatar/avatar1.png"
                     alt="User"
@@ -26,7 +26,6 @@ export default function private_teacher() {
                 </div>
                 <div className="user-data">
                   <h4>Daniel Adams</h4>
-                  <span>Joined February 06, 2017</span>
                 </div>
               </div>
             </aside>
@@ -167,12 +166,12 @@ export default function private_teacher() {
               <div className="comment-body">
                 <p className="comment-text">Yoga (principiantes)</p>
                 <p className="comment-text">Hikking (senderismo preparado)</p>
-                <p className="comment-text">Meditacion ()</p>
+                <p className="comment-text">Meditacion </p>
               </div>
             </div>
-            {/* Reply Form*/}
+            
             <form>
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="btn btn-primary mb-4">
                 Submit
               </button>
             </form>
