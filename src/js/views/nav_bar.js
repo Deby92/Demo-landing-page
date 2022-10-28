@@ -99,5 +99,6 @@ export default function nav_bar() {
         </div>
       </div>
     </>
+    
   );
 }
