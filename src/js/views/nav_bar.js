@@ -76,32 +76,20 @@ export default function nav_bar() {
                 className="dropdown-menu bg-info"
                 aria-labelledby="offcanvasNavbarDropdown"
               >
-                <li>
+                <li className="nav-item m-1 p-1">
                   <Link className="dropdown-item" to="/profile">
                     Perfil
                   </Link>
                 </li>
-                <li>
-                  <Link className="dropdown-item" to="/preferences">
-                    Preferencias
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/update">
-                    Actualizar perfil
-                  </Link>
-                </li>
-                <li>
-                  <hr className="dropdown-divider bg-info" />
-                </li>
                 <li
-                  className="dropdown-item"
-                  onClick={() => actions.handleLogout(history)}
-                >
+                  className="nav-item m-1 p-1">
+                  <div className="nav-link"
+                  onClick={() => actions.handleLogout(history)}>
                   Logout
+                  </div>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/profile">
+                <li className="nav-item m-1 p-1">
+                  <Link className="nav-link active" aria-current="page" to="/">
                     Pagina principal
                   </Link>
                 </li>
